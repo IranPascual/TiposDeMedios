@@ -1,0 +1,206 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #74a3a0 0%, #62819c 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezados */
+h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #f0f0f0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ffdd57;
+    text-shadow: 0 0 10px rgba(255, 221, 87, 0.5),
+                 0 0 20px rgba(255, 221, 87, 0.7),
+                 0 0 30px rgba(255, 221, 87, 0.9);
+    animation: destellos 2s infinite ease-in-out;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 60px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: left;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Sección de contacto */
+#contacto {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+/* Pie de página */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Enlaces del pie de página */
+footer a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #d4d9e3;
+}
+
+/* Transiciones */
+a {
+    transition: color 0.3s ease-in-out;
+}
+
+button, input[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+}
+
+/* Efectos hover para las imágenes */
+img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para el header */
+header {
+    background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #f8f9fa;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Barra de navegación */
+.navbar {
+    background: linear-gradient(135deg, #0b7153 0%, #0056b3 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5em;
+    color: #f8f9fa;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-brand:hover {
+    color: #d2ff57;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #f8f9fa;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 221, 87, 0.3);
+    color: #ffdd57;
+}
+
+.collapse {
+    justify-content: center;
+}
